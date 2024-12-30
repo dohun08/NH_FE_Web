@@ -31,6 +31,9 @@ export default function MainPage() {
             const response = await axios.get(`https://${ip}/api/witch?carNumber=${carNum}`);
             setSelectNum(response.data.parkingWitch);
             setCarNumConst(carNum);
+            if(!response.ok){
+                alert('찾으시는 차량이 없습니다.');
+            }
         } catch (error) {
             console.error(error);
         }
