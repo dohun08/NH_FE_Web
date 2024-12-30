@@ -40,7 +40,6 @@ export default function MainPage() {
     };
 
     const getData = async () => {
-        setIsLoading(true);
         try {
             const response = await axios.get(`https://${ip}/api/show`);
             if (response.status === 200) setData(response.data);
