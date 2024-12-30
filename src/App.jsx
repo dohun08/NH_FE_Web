@@ -50,7 +50,7 @@ export default function MainPage() {
     };
 
     useEffect(() => {
-        setTimeout(() => getData(), 2000);
+        setInterval(() => getData(), 2000);
 
     }, []);
 
