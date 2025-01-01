@@ -77,7 +77,7 @@ export default function MainPage() {
                             value={carNum}
                             onChange={(e) => setCarNum(e.target.value)}
                             className="input"
-                            placeholder="차량번호를 입력해주세요 ex : 123가4567"
+                            placeholder="차량번호를 입력해주세요 ex : 123가 4567"
                         />
                         {selectNum && (
                             <div className="result">
